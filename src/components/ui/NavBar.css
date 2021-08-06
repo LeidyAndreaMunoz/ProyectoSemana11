@@ -1,0 +1,12 @@
+.stivkyHeader {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1;
+}
+.logoContainer{
+    display: contents;
+}
+a img {
+    width: 5%;
+}

@@ -1,0 +1,25 @@
+#aboutContainer a {
+    margin: 2%; 
+}
+#aboutContainer {
+    background-color: #e6e6e6;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    margin-top: 10%;
+}
+#aboutContainer:hover{
+    box-shadow: 1px 4px 23px 2px rgba(146,92,92,0.54);
+}
+#aboutPhotoContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#aboutPhoto{
+    width: 40%;
+}
+#aboutButtons {
+    display: flex;
+}

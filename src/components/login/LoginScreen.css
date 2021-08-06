@@ -1,0 +1,74 @@
+
+.loginContainer {
+    width: 80%;
+    margin: auto;
+    margin-top: 2%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #222D32;
+    border-radius: 20px;
+    padding: 6%;
+}
+.formulario {
+    width:80%;
+    background:#e6e6e6;
+    border-radius:8px;
+    padding:20px 30px;max-width:calc(100vw - 40px);
+    box-sizing:border-box;
+  }
+  .formulario:hover {
+    box-shadow:0 0 40px -10px #000;
+  }
+.loginContainer h3 {
+    margin:10px 0;
+    padding-bottom:10px;
+    width:100%;
+    color:#fff;
+    border-bottom:3px solid #63878a
+}
+.loginContainer input{
+    width:100%;
+    padding:10px;
+    box-sizing:border-box;
+    background-color:none;
+    outline:none;
+    resize:none;
+    border:0;
+    transition:all .3s;
+    border-bottom:2px solid #bebed2
+}
+
+.loginContainer input:focus{
+    border-bottom:2px solid #78788c
+}
+.loginContainer p:before{
+    content:attr(type);
+    display:block;
+    margin:28px 0 0;
+    font-size:14px;
+    color:#5a5a5a
+}
+.loginContainer button{
+    float:right;
+    padding:8px 12px;
+    margin:2%;
+    border:2px solid #78788c;
+    background:0;color:#5a5a6e;
+    cursor:pointer;
+    transition:all .3s
+}
+.loginContainer button:hover{
+    background:#78788c;
+    color:#fff
+}
+.gocontact{
+    color: #fff;
+}
+
+@media (max-width: 500px) {
+    .loginContainer{
+        width: 80%;
+        height: 100%;
+    }
+}
