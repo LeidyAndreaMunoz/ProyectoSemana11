@@ -13,7 +13,7 @@ export const Search = (props) => {
         <form onSubmit={(e) => handleSearch(e) }>
             <input 
                 type="text"
-                placeholder="Busca un pais..."
+                placeholder="Busca un país..."
                 className="form-control"
                 name="searchText"
                 autoComplete="off"
@@ -25,7 +25,7 @@ export const Search = (props) => {
                 type="submit"
                 className="btn m-1 btn-block btn-outline-primary"
             >
-                Search...
+                Buscar
             </button>
         </form>
     )

@@ -18,9 +18,9 @@ export const LoginScreen = ({ history }) => {
         const actualUsers = JSON.parse(localStorage.getItem('users'))
         if (actualUsers === null) {
             Swal.fire({
-                position: 'top-end',
+                position: 'center',
                 icon: 'warning',
-                title: 'No existe ningun usurio, ¿Desea crear uno?',
+                title: 'No existe ningún usuario, ¿Desea crear uno?',
                 showCancelButton: true,
                 confirmButtonColor: '#242330',
                 confirmButtonText: '<a href="/register">Regístrate</a>'
@@ -34,7 +34,7 @@ export const LoginScreen = ({ history }) => {
                 });
             } else {
                 Swal.fire({
-                    position: 'top-end',
+                    position: 'center',
                     icon: 'warning',
                     title: 'Usuario no registrado',
                     showCancelButton: true,
@@ -96,7 +96,7 @@ export const LoginScreen = ({ history }) => {
                     </p>
                 </Form>
                 <p className="gocontact">
-                    ¿Tienes algo por decirnos?  <Link to='/contacto' class="text-reset">Contáctanos</Link>.
+                    ¿Tienes algo por decirnos?  <Link to='/contacto' className="text-reset">Contáctanos</Link>.
                 </p>
                 
             </div>

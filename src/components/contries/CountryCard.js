@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import './coutriesCard.css'
 
 export const CountryCard = ({
     flag,
@@ -7,8 +8,8 @@ export const CountryCard = ({
 }) => {
 
     return (
-        <div className="card ms-3 animate__animated animate__fadeIn" style={ { maxWidth: 540 } }>
-            <div className="row no-gutters">
+        <div className="card ms-3 animate__animated animate__fadeIn" id="cardsMain" style={ { maxWidth: 540 } }>
+            <div className="row no-gutters" id="cardDtail" >
                 <div className="col-md-4">
                     <img src={ flag} className="card-img" alt={ flag } />
                 </div>

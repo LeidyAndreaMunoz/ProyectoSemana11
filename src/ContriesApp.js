@@ -8,7 +8,7 @@ const init = () => {
 }
 
 
-export const HeroesApp = () => {
+export const ContriesApp = () => {
     
     const [ user, dispatch ] = useReducer(authReducer, {}, init);
 

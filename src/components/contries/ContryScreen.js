@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useParams, Redirect } from 'react-router-dom';
-import './coutriesList.css'
-export const HeroScreen = ({ history }) => {
+import './coutriesCard.css'
+export const ContryScreen = ({ history }) => {
 
     const { name } = useParams();
     const [country, setCountry] = useState({})
@@ -35,7 +35,6 @@ export const HeroScreen = ({ history }) => {
         capital,
         nativeName,
         population,
-        characters,
         flag,
         subregion,
     } = country;
@@ -67,7 +66,7 @@ export const HeroScreen = ({ history }) => {
                     className="btn btn-outline-info col-12  "
                     onClick={ handleReturn }
                 >
-                    Return
+                    Volver
                 </button>
 
             </div>

@@ -1,10 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import 'semantic-ui-css/semantic.min.css';
-import { HeroesApp } from './HeroesApp';
+import { ContriesApp } from './ContriesApp';
 
 
 ReactDOM.render(
-  <HeroesApp />,
+  <ContriesApp />,
   document.getElementById('root')
 );
