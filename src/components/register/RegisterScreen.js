@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
 import { useFormik } from 'formik';
-import { Container, Form, Button } from 'semantic-ui-react';
+import { Form } from 'semantic-ui-react';
 import * as Yup from 'yup';
 import { types } from '../../types/types';
 import { AuthContext } from '../../auth/AuthContext';
@@ -40,8 +40,8 @@ export const RegisterScreen = ({ history }) => {
         validationSchema: Yup.object({
             email: Yup.string().email("Email invalido").required("Campo requerido"),
             name: Yup.string().required("Campo requerido"),
-            password: Yup.string().required("Campo requerido").oneOf([Yup.ref("repeatPassword")], "Las contraseñas no coinciden"),
-            repeatPassword: Yup.string().required("Campo requerido").oneOf([Yup.ref("password")], "Las contraseñas no coinciden")
+            password: Yup.string().required("Campo requerido").min(6, 'Debe contener más de 6 caracteres').oneOf([Yup.ref("repeatPassword")], "Las contraseñas no coinciden"),
+            repeatPassword: Yup.string().required("Campo requerido").min(6, 'Debe contener más de 6 caracteres').oneOf([Yup.ref("password")], "Las contraseñas no coinciden")
         }),
         onSubmit: (formData) => {
             handleLogin(formData);
@@ -90,7 +90,7 @@ export const RegisterScreen = ({ history }) => {
                     <Link to='/login' className="boton-enviar" ><button type="submit">Volver</button> </Link>
                 </Form>
                 <p className="gocontact">
-                    ¿Tienes algo por decirnos?  <Link to='/contacto' class="text-reset">Contáctanos</Link>.
+                    ¿Tienes algo por decirnos?  <Link to='/contacto' className="text-reset">Contáctanos</Link>.
                 </p>
             </div>
     )  

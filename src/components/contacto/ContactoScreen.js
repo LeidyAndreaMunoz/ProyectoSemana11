@@ -1,7 +1,7 @@
 import React, {useState, } from "react";
 import './ContactoScreen.css';
 import { useFormik } from 'formik';
-import { Container, Form, Button } from 'semantic-ui-react';
+import {  Form } from 'semantic-ui-react';
 import * as Yup from 'yup';
 import { Link } from "react-router-dom";
 
@@ -76,8 +76,8 @@ export const ContactoScreen = () => {
                 </p>
                 <Link to='/login' className="boton-enviar" ><button type="submit">Volver</button> </Link>
             </Form>
-                ) : <div class="card" id="cardresponse">
-                        <div class="card-body">
+                ) : <div className="card" id="cardresponse">
+                        <div className="card-body">
                         ¡Gracias por contactarnos! Pronto nos comunicaremos contigo
                         </div>
                         <Link to='/login' className="boton-enviar" id="backContact"><button type="submit">Volver</button> </Link>

@@ -33,7 +33,7 @@ export const Navbar = () => {
             <Link className="logoContainer" 
                 to="/"
             >
-                <img src={Logo}></img>
+                <img src={Logo} alt="Logo principal "></img>
             </Link>
 
             <div className="navbar-collapse">
@@ -43,7 +43,7 @@ export const Navbar = () => {
                         activeClassName="active"
                         className="nav-item nav-link" 
                         exact
-                        to="/marvel"
+                        to="/home"
                     >
                         Inicio
                     </NavLink>
@@ -70,7 +70,7 @@ export const Navbar = () => {
                         exact
                         to="/about"
                     >
-                        Sobre me
+                        Sobre mi
                     </NavLink>
                     <button 
                         className="nav-item nav-link btn"

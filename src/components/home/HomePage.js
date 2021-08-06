@@ -1,6 +1,5 @@
 import React, {useState, useEffect} from 'react'
-import { HeroList } from '../heroes/HeroList'
-import  { GetCountriesAll }  from '../../selectors/getCountriesAll';
+import { ContryList } from '../contries/ContryList';
 import { Search } from './Search'
 import './countries.css'
 
@@ -27,11 +26,13 @@ export const HomePage = () => {
 
     return (
         <div>
-            <h1>Busqueda de Paises </h1>
+            <h1>Busqueda de países </h1>
             <Search getData={getData}/>
             <hr />
-            {!loading ? <HeroList data={data}/> : 
-                <h1 className="loading">Cargando...</h1>
+            {!loading ? <ContryList data={data}/> : 
+                <div className="spinner-border" role="status">
+                <span className="visually-hidden"></span>
+              </div>
             }
    
         </div>

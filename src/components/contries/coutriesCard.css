@@ -1,0 +1,12 @@
+.loading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.row .col-12 .img-thumbnail {
+    max-width: 300px;
+}
+#cardsMain:hover {
+    box-shadow: 2px -1px 26px -3px rgba(97,20,20,0.75);
+    cursor: pointer;
+}

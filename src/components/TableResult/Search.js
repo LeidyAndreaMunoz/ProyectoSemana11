@@ -25,7 +25,7 @@ export const Search = (props) => {
                 type="submit"
                 className="btn m-1 btn-block btn-outline-primary"
             >
-                Search...
+                Buscar
             </button>
         </form>
     )

@@ -16,8 +16,8 @@ export const AboutScreen = () => {
                         <h5 className="card-title">¡Hola, soy Leidy Andrea!</h5>
                         <p className="card-text">Profesional en proceso de grado con estudios de profundización en inglés, francés, portugués, y dominio de herramientas de marketing y comunicación digital. Poseo altas capacidades de comunicación oral y escrita, potenciadas por un alto nivel de creatividad, una actitud extrovertida y apasionada, junto a un grado destacado de responsabilidad que potencia mi productividad. Siempre estoy dispuesta al conocimiento de nuevos espacios, la aceptación de nuevos retos y la sinergia con personas para un buen trabajo en equipo. Considero dentro de mis principales fortalezas una notable velocidad del aprendizaje y la disposición para liderar equipos de trabajo de manera optimizada para generar cambios positivos en la organización. Actualmente me encuentro aprendiendo y laborando en el área del desarrollo de Software con manejo de HTML5, CSS3 y JavaScript</p>
                         <div id="aboutButtons">
-                            <a href="https://github.com/LeidyAndreaMunoz" target="_blank" className="btn btn-primary">Github</a>
-                            <a href="https://www.linkedin.com/in/leidy-andrea-mu%C3%B1oz-hios-000571210/" target="_blank" className="btn btn-primary">Linkedin</a>
+                            <a href="https://github.com/LeidyAndreaMunoz" target="_blank" rel="noopener noreferrer" className="btn btn-primary">Github</a>
+                            <a href="https://www.linkedin.com/in/leidy-andrea-mu%C3%B1oz-hios-000571210/" target="_blank" rel="noopener noreferrer" className="btn btn-primary">Linkedin</a>
                         </div>
                     </div>
                 </div>

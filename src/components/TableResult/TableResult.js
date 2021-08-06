@@ -1,5 +1,6 @@
 import React, {useState, useEffect} from 'react'
 import { Link } from 'react-router-dom';
+import './TanleResults.css'
 
 import { Search } from './Search'
 
@@ -26,12 +27,12 @@ import { Search } from './Search'
 
     return (
         <div>
-            <h1>Busqueda de Paises </h1>
+            <h1>Busqueda de países </h1>
             <Search getData={getData}/>
             <hr />
             {!loading ? (
-                        <>
-                        <table class="table table-hover">
+                        <div >
+                        <table className="table table-striped table-hover" id="resultsTable">
                         <thead>
                         <tr>
                             <th scope="col">#</th>
@@ -78,9 +79,11 @@ import { Search } from './Search'
             
                         </tbody>
                     </table>
-                    </>
+                    </div>
             ) : 
-                <h1 className="loading">Cargando...</h1>
+            <div className="spinner-border" role="status">
+                <span className="visually-hidden"></span>
+            </div>
             }
    
         </div>

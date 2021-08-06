@@ -1,9 +1,8 @@
-import React, { useMemo } from 'react';
-import  GetCountriesAll  from '../../selectors/getCountriesAll';
-import { CountryCard } from './HeroCard';
-import './coutriesList.css'
+import React from 'react';
+import { CountryCard } from './CountryCard';
+import './coutriesCard.css'
 
-export const HeroList = (props) => {
+export const ContryList = (props) => {
     const {data} = props
     return (
         <div className="card-columns animate__animated animate__fadeIn">
