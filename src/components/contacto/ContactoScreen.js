@@ -1,7 +1,7 @@
-import React, {useState, } from "react";
+import React, {useState} from "react";
 import './ContactoScreen.css';
 import { useFormik } from 'formik';
-import {  Form } from 'semantic-ui-react';
+import { Container, Form, Button } from 'semantic-ui-react';
 import * as Yup from 'yup';
 import { Link } from "react-router-dom";
 
@@ -11,8 +11,7 @@ export const ContactoScreen = () => {
 
     const [open, setOpen] = useState(false)
 
-    const formSent = (e) => {
-        e.preventDefault();
+    const formSent = () => {
         setOpen(true);
     } 
     const formik = useFormik({
@@ -28,7 +27,7 @@ export const ContactoScreen = () => {
             subject: Yup.string().required("Campo requerido").max(140),
             textarea: Yup.string().required("Campo requerido").max(500)
         }),
-        onSubmit: (formData) => {
+        onSubmit: () => {
             formSent();
         },
     })
@@ -76,8 +75,8 @@ export const ContactoScreen = () => {
                 </p>
                 <Link to='/login' className="boton-enviar" ><button type="submit">Volver</button> </Link>
             </Form>
-                ) : <div className="card" id="cardresponse">
-                        <div className="card-body">
+                ) : <div class="card" id="cardresponse">
+                        <div class="card-body">
                         ¡Gracias por contactarnos! Pronto nos comunicaremos contigo
                         </div>
                         <Link to='/login' className="boton-enviar" id="backContact"><button type="submit">Volver</button> </Link>
